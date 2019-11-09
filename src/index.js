@@ -12,9 +12,18 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './global.css';
 import Badge from './components/Badge';
 
-const element = <h1>Hello, Platzi Badgesdddd!</h1>;
+//const element = <h1>Hello, Platzi Badgesdddd!</h1>;
 
 const container = document.getElementById('app');
 
 // ReactDOM.render(__qué__, __dónde__);
-ReactDOM.render(<Badge />, container);
+ReactDOM.render(
+  <Badge 
+    firstName='Leo' 
+    lastName='Hernández'
+    jobTitle='Fullstack Dev'
+    twitter='leo_Supernova'
+    avatarUrl='https://s.gravatar.com/avatar/6d0594db0a0ade9b4302932bd113a271?s=80'
+  />, 
+  container
+);
