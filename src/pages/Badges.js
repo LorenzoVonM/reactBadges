@@ -39,8 +39,17 @@ class Badges extends React.Component {
       ]
   };
 
-  render() {
+  constructor(props) {
+    super(props)
+    console.log('1 cons');
+  }
 
+  componentDidMount(){
+    console.log('3mount');
+  }
+
+  render() {
+    console.log('render');
     return(
       <React.Fragment>
         <div className="Badges">
