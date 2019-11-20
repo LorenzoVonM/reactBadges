@@ -32,9 +32,28 @@ class BadgeNew extends React.Component {
 
   }
 
+  handleSubmit = async e => {
+    e.preventDefault();
+    this.setState({
+      loading:true,
+      error:null,
+    });
+    try {
+      await applicationCache.badges.create(this.state.form);
+      this.setState({
+        loadins:false,
+      });
+    } catch (error) {
+      this.setState({
+        loadins:false,
+        error:error,
+      });
+    }
+  }
+
   render(){
     return(
-      <React.Fragment>
+      <>
         <div className='BadgeNew__hero'>
           <img className='BadgeNew__hero-image img-fluid' src={header} alt='Logo' />
         </div>
@@ -47,17 +66,18 @@ class BadgeNew extends React.Component {
                 jobTitle={this.state.form.jobTitle || 'JOB_TITLE'}
                 twitter={this.state.form.twitter || 'TWITEER'}
                 email={this.state.form.email || 'EMAIL'}
-                avatarUrl='https://s.gravatar.com/avatar/6d0594db0a0ade9b4302932bd113a271?s=80'
               />
             </div>
             <div className="col-6">
               <BadgeForm 
+                onSubmit={this.handleSubmit}
                 onChange={this.handleChange}
-                formValues={this.state.form}/>
+                formValues={this.state.form}
+              />
             </div>
           </div>
         </div>
-      </React.Fragment>
+      </>
     )
   }
 }
