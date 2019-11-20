@@ -5,6 +5,9 @@ import header from '../images/platziconf-logo.svg';
 import Badge from '../components/Badge';
 import BadgeForm from '../components/BadgeForm';
 
+import api from '../api';
+
+
 class BadgeNew extends React.Component {
 
   state = {form: {
@@ -39,7 +42,7 @@ class BadgeNew extends React.Component {
       error:null,
     });
     try {
-      await applicationCache.badges.create(this.state.form);
+      await api.badges.create(this.state.form);
       this.setState({
         loadins:false,
       });

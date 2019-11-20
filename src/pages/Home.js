@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/Home.css';
 import platziconflogo from '../images/platziconf-logo.svg';
 import astronauts from '../images/astronauts.svg';
+import { Link } from 'react-router-dom';
+
 
 function Home(){
   return(
@@ -23,7 +25,7 @@ function Home(){
                 </p>
               </div>  
             <div className="row Row__center-sub">
-              <button className="btn btn-primary" >Start Now</button>
+              <Link className="btn btn-primary" to='/badges' >Start Now</Link>
             </div>
         </div>
         <div className="col-7">
