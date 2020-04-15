@@ -44,7 +44,6 @@ class BadgeEdit extends React.Component {
         [e.target.name]: e.target.value,
       }
     });
-
   }
 
   handleSubmit = async e => {

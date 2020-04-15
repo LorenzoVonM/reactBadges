@@ -26,7 +26,7 @@ class BadgesListItem extends React.Component {
   }
 }
 
-class BadgesList extends React.Component {
+export default class BadgesList extends React.Component {
   render() {
     if (this.props.badges.length === 0) {
       return (
@@ -60,4 +60,3 @@ class BadgesList extends React.Component {
   }
 }
 
-export default BadgesList;
