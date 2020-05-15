@@ -10,11 +10,17 @@ Technologies used:
 
 * React (react-router, hooks, states, portals, life cycle, layouts, props hoisting, jsx)
 * Javascript ES6(fetch, classes, destructuring, string interpolation, ...)
+* Bootstrap
 * Gravatar
 * Webpack
 
-
-
+<img src="https://github.com/LorenzoVonM/reactBadges/blob/master/src/images/presentation/Home.png" width="100%" class="center">
+</br>
+<img src="https://github.com/LorenzoVonM/reactBadges/blob/master/src/images/presentation/Badge%20Sample.png" width="100%" class="center">
+</br>
+<img src="https://github.com/LorenzoVonM/reactBadges/blob/master/src/images/presentation/Badges%20List.png" width="100%" class="center">
+</br>
+<img src="https://github.com/LorenzoVonM/reactBadges/blob/master/src/images/presentation/Modal%20using%20portal.png" width="100%" class="center">
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
