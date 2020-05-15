@@ -1,3 +1,22 @@
+## Platzi Badges
+
+Create personalized badges for your conference attendants.
+
+Fill a simple form to create a badge with the attendant information and a photo pulled from gravatar! 
+
+See the list, filter in real-time, delete and edit changes. 
+
+Technologies used:
+
+* React (react-router, hooks, states, portals, life cycle, layouts, props hoisting, jsx)
+* Javascript ES6(fetch, classes, destructuring, string interpolation, ...)
+* Gravatar
+* Webpack
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
